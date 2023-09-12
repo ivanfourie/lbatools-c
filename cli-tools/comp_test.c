@@ -34,9 +34,9 @@ main(int argc, char *argv[])
 	printf("D: C = Compress, D = Decompress\n");
 	printf("N: 1 = LZSS, 2 = LZMIT\n");
     } else {
-	if (!stricmp(argv[1], "C"))
+	if (!strcasecmp(argv[1], "C"))
 		dir = 0;	/* Compress. */
-	else if (!stricmp(argv[1], "D"))
+	else if (!strcasecmp(argv[1], "D"))
 		dir = 1;	/* Decompress. */
 	else {
 		printf("Invalid direction: %s\n", argv[1]);
